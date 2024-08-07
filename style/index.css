@@ -1,0 +1,408 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: #eee;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.sec-1 h2, .sec-2 h2
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+.sec-1 .l-r-btn button, .sec-2 .l-r-btn button
+{
+    font-size: 1.3rem;
+    height: 100px;
+    width: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+}
+.sec-1 .l-r-btn .l-btn
+{
+    left: 5px;
+    top: 780px;
+}
+.sec-1 .l-r-btn .r-btn
+{
+    right: 5px;
+    top: 780px;
+}
+
+
+
+
+
+
+/* Popular Products */
+
+
+
+.popular-products, .under-20{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    background-color: white;
+    margin: 30px 0;
+}
+.popular-products::-webkit-scrollbar, .under-20::-webkit-scrollbar
+{
+    display: none;
+}
+.popular-products .product, .under-20 .product
+{
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.popular-products .product img, .under-20 .product img
+{
+    width: 180px;
+    height: 180px;
+}
+
+.popular-products .product a, .under-20 .product a
+{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+.popular-products .product a:hover, .under-20 .product a:hover
+{
+    color: blue;
+}
+.popular-products .product button, .under-20 .product button
+{
+    width: 100%;
+    cursor: pointer;
+    background-color: darkorange;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    height: 30px;
+}
+.popular-products .product button:hover, .under-20 .product button:hover
+{
+    box-shadow: 1px 2px 6px black;
+}
+
+.sec-2 .l-r-btn .l-btn
+{
+    left: 5px;
+    top: 1170px;
+}
+.sec-2 .l-r-btn .r-btn
+{
+    right: 5px;
+    top: 1170px;
+}
+
+
+
+/* Categoris Section */
+.categories-sec
+{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: 30px 0;
+}
+.categories-sec::-webkit-scrollbar
+{
+    display: none;
+}
+.categories-sec .category
+{
+    width: 200px;
+    height: 180px;
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+.categories-sec .category p
+{
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+.categories-sec .category .categ-img
+{
+    width: 130px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.categories-sec .category .categ-img img
+{
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    border: 1px solid black;
+    object-fit:contain;
+    object-position: center;
+}
+.categories-sec .category  a
+{
+    text-decoration: none;
+    color: black;
+}
+.categories-sec .category  a:hover
+{
+    text-decoration: underline;
+    color: darkorange;
+}
+
+
+
+
+/* SLIDER */
+.slider
+{
+    width: 100%;
+    height: 310px;
+    /* box-shadow: 0 2px 5px black; */
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+    position: relative;
+}
+.slide 
+{
+    width: 100%;
+    position: absolute;
+    transition: 0.5s;
+}
+.slide img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.slide-btn #p-btn, .slide-btn #n-btn
+{
+    position: absolute;
+    top: 170px;
+    width: 35px;
+    font-size: 1.5rem;
+    height: 100px;
+    cursor: pointer;
+}
+.slide-btn #p-btn
+{
+    left: 10px;
+}
+.slide-btn #n-btn
+{
+    right: 10px;
+}
+
+
+/* HELP */
+
+.help-sec
+{
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    background-color: darkorange;
+    padding-top: 40px;
+}
+.help-sec h2
+{
+    font-size: 1.8rem;
+}
+.help-sec p
+{
+    font-size: 1.1rem;
+    padding: 15px 0;
+}
+.help-sec button
+{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.help-sec button:hover
+{
+    box-shadow: 0 2px 5px black;
+}
+
+
+
+/* serched-area */
+.serched-page
+{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.search-area
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 50px;
+}
+.search-area a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.search-area a:hover
+{
+    color: blue;
+}
+
+.search-product
+{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid darkorange;
+    margin: 15px;
+    padding: 10px;
+}
+.search-product .price
+{
+    font-size: 1.1rem;
+}
+.search-bak-btn
+{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: darkorange;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.search-product img
+{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+}
+.result-for p
+{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: black;
+}
+.result-for p span
+{
+    color: darkorange;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .l-btn, .r-btn
+    {
+        display: none;
+    }
+
+        /* grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); */
+
+    .slide-btn #p-btn, .slide-btn #n-btn
+    {
+        top: 280px;
+    }
+}
+
+
+
+
+
+
+/* 520 screen */
+
+@media (max-width: 520px)
+{
+    .slider, .slide-btn #p-btn, .slide-btn #n-btn
+    {
+        display: none;
+    }   
+
+    /* Products */
+    .popular-products, .under-20{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        overflow-x:visible;
+        background-color: #eee;
+    }
+    .popular-products .product, .under-20 .product
+    {
+        width: 90%;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        /* border: 1px solid darkorange; */
+        padding-left: 5px;
+        padding-top: 5px;
+        background-color: white;
+
+    }
+    .popular-products .product img, .under-20 .product img
+    {
+        width: 120px;
+        height: 120px;
+    }
+    .popular-products .product button, .under-20 .product button
+    {
+        width: 80%;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .help-sec
+    {
+        width: 100%;
+        height: 200px;   
+    }
+
+}
