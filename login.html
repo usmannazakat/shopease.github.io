@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Login</title>
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/headFoot.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo"><a href="index.html">ShopEase</a></div>
+        <button onclick="showNav()">&#9776;</button>
+    </header>
+
+    <nav class="js-nav">
+        <button onclick="hideNav()">&Cross;</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Mens</a></li>
+            <li><a href="">Womens</a></li>
+            <li><a href="">Mobiles & Computers</a></li>
+            <li><a href="">Kids</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Home Appliences</a></li>
+            <li><a href="login.html">Sign Up</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-side" style="display: none;" onclick="hideNav()">
+
+    </div>
+
+
+    <main>
+
+        <div class="btns">
+            <button  onclick="hideLogin()">SignUp</button>
+            <button onclick="showLogin()">Login</button>
+        </div>
+
+        <div class="sign-up">
+            <form action="">
+                <input type="text" placeholder="Enter Email">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="Confirm Password">
+                <button active>SignUp</button>
+            </form>
+        </div>
+        <div class="login">
+            <form action="">
+                <input type="text" placeholder="Enter Email">
+                <input type="text" placeholder="Password">
+                <button>Login</button>
+            </form>
+        </div>
+    </main>
+
+
+
+    <script src="script/menu.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/cart.js"></script>
+
+</body>
+</html>
